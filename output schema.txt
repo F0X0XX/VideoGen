@@ -1,0 +1,1 @@
+{meta_data : {Bank name, Customer name, IBAN, Account number, Phone number}, transactions_data : [{date,amount,description, deposit:boolean}],balances: [{date,amount}]}
