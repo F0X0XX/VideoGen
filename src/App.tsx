@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { VideoPromptForm, type PromptData } from '@/components/VideoPromptForm';
+import { VideoPromptForm } from '@/components/VideoPromptForm';
 import { VideoPlayer } from '@/components/VideoPlayer';
 import { Header } from '@/components/Layout/Header';
 import backgroundImage from '@/files/images/annie-spratt-xTaOPMa6wAE-unsplash.jpg';
