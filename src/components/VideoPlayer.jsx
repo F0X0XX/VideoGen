@@ -12,11 +12,11 @@ export function VideoPlayer({ videoUrl }) {
   }
 
   return (
-    <Card className="w-full h-full min-h-[600px] backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 overflow-hidden">
+    <Card className="w-full h-full max-h-[600px] backdrop-blur-sm bg-white/50 dark:bg-gray-900/50 overflow-hidden">
       <video
         src={videoUrl}
         controls
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover max-h-[600px]"
       >
         Your browser does not support the video tag.
       </video>

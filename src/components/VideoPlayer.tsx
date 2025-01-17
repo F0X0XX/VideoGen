@@ -21,7 +21,7 @@ export function VideoPlayer({ videoUrl }: VideoPlayerProps) {
         <video
           src={videoUrl}
           controls
-          className="absolute top-0 left-0 w-full h-full object-cover"  // Use absolute positioning
+          className="absolute top-0 left-0 w-full h-full max-h-[600px] object-cover"  // Use absolute positioning
         >
           Your browser does not support the video tag.
         </video>
