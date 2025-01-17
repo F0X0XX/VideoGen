@@ -68,16 +68,16 @@ function App() {
         style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <Header/>
-        <div className="flex justify-center">
-        <div className="flex w-[80%] justify-center items-center lg:order-1 gap-[30px]">
-            <div className="w-[30%]">
-              <VideoPromptForm onSubmit={handleSubmit} isLoading={isLoading} />
-            </div>
-            <div className="w-[70%] lg:order-2 sticky top-8 max-h-[600px]">
-              <VideoPlayer videoUrl={videoUrl} />
+        <div className="flex justify-center md:flex-row">
+          <div className="w-full md:flex md:w-[100%] lg:w-[80%] justify-center items-center lg:order-1 gap-[30px]">
+              <div className="sm:w-full mb-[50px] md:mb-0 md:w-[40%]">
+                <VideoPromptForm onSubmit={handleSubmit} isLoading={isLoading} />
+              </div>
+              <div className="sm:w-full md:w-[60%] lg:order-2 sticky top-8 max-h-[600px]">
+                <VideoPlayer videoUrl={videoUrl} />
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
 

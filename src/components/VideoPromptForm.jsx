@@ -25,7 +25,7 @@ export function VideoPromptForm({ onSubmit, isLoading }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 p-6 backdrop-blur-sm bg-white/50 dark:bg-gray-900/50s rounded-xl">
+    <form onSubmit={handleSubmit} className="space-y-6 p-6 backdrop-blur-sm bg-white/50 dark:bg-gray-900/50s rounded-xl min-w-[500px]">
       <div className="grid grid-cols-1 gap-6">
         <div className='mb-[20px]' style={{marginBottom:'20px'}}>
         <Card className="p-6 backdrop-blur-sm bg-white/50 dark:bg-gray-900/50">
@@ -92,6 +92,8 @@ export function VideoPromptForm({ onSubmit, isLoading }) {
                 <SelectContent>
                   <SelectItem value="Emo">Emo</SelectItem>
                   <SelectItem value="West Coast - Throwback">West Coast - Throwback</SelectItem>
+                  <SelectItem value="Lo Fi">Lo Fi</SelectItem>
+                  <SelectItem value="County">County</SelectItem>
                 </SelectContent>
               </Select>
             </div>
